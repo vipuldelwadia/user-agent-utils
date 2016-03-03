@@ -3,7 +3,7 @@ bin/
 .classpath
 .settings
 .DS_Store
-
+javadoc
 
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
@@ -64,5 +64,3 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-
-
