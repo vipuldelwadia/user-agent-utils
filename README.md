@@ -13,18 +13,13 @@ Support me and buy me a beer:
 
 Advice
 ------
-A lot of user-agents lie about their identify. That makes US sniffing a guessing game. On websites it is a better approach to detect features using a javascript library like Modernizr (http://modernizr.com/).  
+A lot of user-agents lie about their identity. That makes US sniffing a guessing game. On websites it is a better approach to detect features using a javascript library like Modernizr (http://modernizr.com/).  
 
 If you want faster updates, switch to snapshot releases.     
 
-New in Version 1.19
+New in Version 1.20 (unreleased)
 -------------------
-- #138 Improved future Microsoft Edge detection and added  Edge 13
-- Added current and future Firefox and Chrome versions
-- Improved detection of unsuported new Firefox versions
-- Added detection of Firefox mobile for iOS devices
-- Improved Phantom.js detection as BOT
-- Added support for Android 6 and Android 6 tablets 
+- #142 Fix iPhone detection in case of Opera Mini agent-string  
 
 Javadoc
 -------
@@ -54,7 +49,7 @@ Add dependency for snapshot releases:
 Contributors
 ------------
 * Please use the `trunk` branch on GitHub when making a pull request
-* This project is in maintenance mode. We will try to stay up to date and fix bugs but do not expect any big new features or changes. 
+* This project is in maintenance mode. We will try to stay up to date and fix bugs but do not expect any big new features or changes.
 * If you want big changes feel free to fork this project and start your own version.
 * Code has been contributed by: Nathan Maves, Francisco Collao (https://github.com/pcollaog), Madgency (https://github.com/guignol), Pavel Sher (https://github.com/pavelsher), Pierre Etchemaite, Alexander Radzin (https://github.com/alexradzin), SeabassNg (https://github.com/SeabassNg), Sudeep Sinha(https://github.com/sudeep-sinha), John Dydo, frankdev (https://github.com/frankdev), Lew Dawson, Joachim Mueller (https://github.com/joachimmueller), Jason Calabrese (https://github.com/jasoncalabrese), Thorsten Schaefer, Parker Seidel (https://github.com/parker), Joris Aerts (https://github.com/JorisAerts), Stephan Heffner, Filipe Névola (https://github.com/filipenevola), John Patrick (https://github.com/nhojpatrick), Konrad Kubacki (https://github.com/konradkg)
 
@@ -85,6 +80,15 @@ http://www.bitwalker.eu/contact
 Changelog
 ---------
 
+1.19
+----
+- #138 Improved future Microsoft Edge detection and added  Edge 13
+- Added current and future Firefox and Chrome versions
+- Improved detection of unsuported new Firefox versions
+- Added detection of Firefox mobile for iOS devices
+- Improved Phantom.js detection as BOT
+- Added support for Android 6 and Android 6 tablets
+
 1.18
 ----
 - #118 Updated Opera support
@@ -104,10 +108,10 @@ Changelog
 ----
 - iOS 8.2, 8.3, 8.4 and 9 added
 - Chrome updated with latest versions
-- Firefox updated with latest versions 
+- Firefox updated with latest versions
 - Updated Opera browser detection
 - Xbox OS and Internet Explorer for Xbox added  
-- Improved CFNETWORK browser detection 
+- Improved CFNETWORK browser detection
 - Added Vivaldi browser
 - Improved Windows 10 detection
 - Improved bot detection
@@ -138,7 +142,7 @@ Changelog
 * Added agent string handling for Microsoft RSS platform user-agents
 * Added detection of Windows Phone 8.1 and IE Mobile 11.
 * Fixed null pointer exception when user-agent-string was null
-* Adjusted IE11 regex to match IE11 on Win8 
+* Adjusted IE11 regex to match IE11 on Win8
 
 
 1.12
@@ -163,8 +167,8 @@ Changelog
 * Fixed and extended OS and browser detection when using Firefox on mobiles or tablets
 * Added additional and future Firefox versions
 * Added Chrome 29
-* Added Opera 11, 12, 15 & 16 
- 
+* Added Opera 11, 12, 15 & 16
+
 1.9
 ---
 
@@ -178,5 +182,4 @@ Changelog
 * Option just to check just for a given collection of browsers or operating systems
 * Updated Chrome, Firefox and Safari detection to include the latest versions
 * Minor code optimizations
-* The package name has changed. Update import statements if you've been using the library before! 
-
+* The package name has changed. Update import statements if you've been using the library before!

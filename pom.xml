@@ -7,7 +7,7 @@
 	<name>User-Agent-Utils</name>
 	<url>http://www.bitwalker.eu/software/user-agent-utils</url>
 	<artifactId>UserAgentUtils</artifactId>
-	<version>1.19</version>
+	<version>1.20-SNAPSHOT</version>
 	<description>Utility classes to handle user-agents.</description>
 	<properties>
 		<github.global.server>github</github.global.server>
@@ -34,25 +34,26 @@
 	</developers>
 
 	<issueManagement>
-		<url>https://github.com/HaraldWalker/user-agent-utils/issues</url>
+		<url>https://github.com/vipuldelwadia/user-agent-utils/issues</url>
 		<system>GitHub</system>
 	</issueManagement>
 
 	<scm>
-		<url>https://github.com/HaraldWalker/user-agent-utils</url>
-		<connection>scm:git:git://github.com:HaraldWalker/user-agent-utils.git</connection>
-		<developerConnection>scm:git:git@github.com:HaraldWalker/user-agent-utils.git</developerConnection>
+		<url>https://github.com/vipuldelwadia/user-agent-utils</url>
+		<connection>scm:git:git://github.com:vipuldelwadia/user-agent-utils.git</connection>
+		<developerConnection>scm:git:git@github.com:vipuldelwadia/user-agent-utils.git</developerConnection>
 	</scm>
 
 	<distributionManagement>
 		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+ 		   <id>aviarc-snapshots</id>
+ 		   <name>Aviarc Snapshots</name>
+ 		   <url>http://nexus.coretech.co.nz/content/repositories/aviarc-snapshots</url>
 		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<name>Maven Central Staging Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		   <id>aviarc-releases</id>
+		   <name>Aviarc Releases</name>
+		   <url>http://nexus.coretech.co.nz/content/repositories/aviarc-releases</url>
 		</repository>
 	</distributionManagement>
 
@@ -65,17 +66,6 @@
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.3</version>
-				<extensions>true</extensions>
-				<configuration>
-					<serverId>ossrh</serverId>
-					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
-					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -135,24 +125,6 @@
 						<id>attach-sources</id>
 						<goals>
 							<goal>jar-no-fork</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.6</version>
-				<configuration>
-    <useAgent>true</useAgent>
-  </configuration>
-				<executions>
-					<execution>
-						<id>sign-artifacts</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>sign</goal>
 						</goals>
 					</execution>
 				</executions>
